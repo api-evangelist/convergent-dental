@@ -1,0 +1,81 @@
+generated: '2026-08-01'
+method: probed
+source: live HTTPS probes of every Convergent Dental host resolved from apis.yml
+note: >-
+  No /.well-known/ document was found on any Convergent Dental host. Every probe
+  below returned a real HTTP 404 with a text/html body (the HubSpot CMS 404 page),
+  not a single-page-app 200 catch-all, so these are genuine misses rather than
+  false negatives. No WellKnown or SecurityTxt pointer is wired into apis.yml
+  because no document is actually published.
+hosts_probed:
+- host: www.convergentdental.com
+  resolves: true
+  note: HubSpot CMS (20858801.group1.sites.hubspot.net)
+- host: convergentdental.com
+  resolves: true
+- host: ilovesolea.com
+  resolves: true
+- host: soleadoctors.com
+  resolves: true
+- host: api.convergentdental.com
+  resolves: false
+- host: developer.convergentdental.com
+  resolves: false
+- host: docs.convergentdental.com
+  resolves: false
+- host: app.convergentdental.com
+  resolves: false
+- host: portal.convergentdental.com
+  resolves: false
+- host: my.convergentdental.com
+  resolves: false
+documents: []
+probes:
+- host: https://www.convergentdental.com
+  results:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: https://convergentdental.com
+  results:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: https://ilovesolea.com
+  results:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: https://soleadoctors.com
+  results:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
